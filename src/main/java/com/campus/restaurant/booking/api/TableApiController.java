@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class TableApiController {
-
+int counter;
     @GetMapping("/table")
     public Table getTable() {
 
@@ -15,6 +15,9 @@ public class TableApiController {
         table.setTo(14);
         table.setName("Johannes");
         table.setNumberOfPersons(9);
+
+        this.counter++;
+        System.out.println("getTable was called: " + this.counter + " times");
 
         return table;
 
