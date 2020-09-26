@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.campus</groupId>
 	<artifactId>restaurant-booking</artifactId>
-	<version>0.0.1</version>
+	<version>0.0.2</version>
 	<name>restaurant-booking</name>
 	<description>Demo project for restaurant booking</description>
 
@@ -19,6 +19,9 @@
 	</properties>
 
 	<dependencies>
+
+
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -34,6 +37,12 @@
 					<artifactId>junit-vintage-engine</artifactId>
 				</exclusion>
 			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>com.vaadin.external.google</groupId>
+			<artifactId>android-json</artifactId>
+			<version>0.0.20131108.vaadin1</version>
+			<scope>compile</scope>
 		</dependency>
 	</dependencies>
 
