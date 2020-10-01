@@ -1,10 +1,20 @@
 package com.campus.restaurant.booking.model;
 
 public class Table {
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    private Integer id;
     private Integer from;
     private Integer to;
     private Integer numberOfPersons;
-    private String name;
+    private String personName;
 
     public Integer getFrom() {
         return from;
@@ -30,11 +40,11 @@ public class Table {
         this.numberOfPersons = numberOfPersons;
     }
 
-    public String getName() {
-        return name;
+    public String getPersonName() {
+        return personName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setPersonName(String personName) {
+        this.personName = personName;
     }
 }

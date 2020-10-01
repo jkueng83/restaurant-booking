@@ -7,13 +7,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class TableApiController {
 int counter;
-    @GetMapping("/table")
+    @GetMapping("/api/table")
     public Table getTable() {
 
         Table table = new Table();
         table.setFrom(11);
         table.setTo(14);
-        table.setName("Johannes");
+        table.setPersonName("Johannes");
         table.setNumberOfPersons(9);
 
         this.counter++;
