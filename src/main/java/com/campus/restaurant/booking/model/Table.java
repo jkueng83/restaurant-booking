@@ -1,6 +1,25 @@
 package com.campus.restaurant.booking.model;
 
+import javax.persistence.*;
+
+@Entity(name = "t_table")
 public class Table {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Integer id;
+
+    @Column(name = "from_time")
+    private Integer from;
+
+    @Column(name = "to_time")
+    private Integer to;
+
+    @Column
+    private Integer numberOfPersons;
+
+    @Column(length = 25)
+    private String personName;
 
     public Integer getId() {
         return id;
@@ -9,12 +28,6 @@ public class Table {
     public void setId(Integer id) {
         this.id = id;
     }
-
-    private Integer id;
-    private Integer from;
-    private Integer to;
-    private Integer numberOfPersons;
-    private String personName;
 
     public Integer getFrom() {
         return from;
